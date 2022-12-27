@@ -1,13 +1,13 @@
 import { Client } from "whatsapp-web.js";
 import qrcode from "qrcode-terminal";
 import { ChatGPTAPIBrowser } from "chatgpt";
-import { convig } from "dotenv";
-convig();
+import { config } from "dotenv";
+config();
 
 const client = new Client();
 
 const api = new ChatGPTAPIBrowser({
-  email: process.env,EMAIL,
+  email: process.env.EMAIL,
   password: process.env.PASSWORD,
 });
 
